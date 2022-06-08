@@ -1,0 +1,13 @@
+{
+  "name": "@backlight-dev/calcom.blank-l45zg9d2",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "type": "module",
+  "homepage": "{{ homepage }}",
+  "scripts": {
+    "serve": "npx backlight@latest serve bbfY7QWzmmi6Lr8t6P0a --open"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
