@@ -1,5 +1,4 @@
 import { useId } from '@radix-ui/react-id';
-import { Root as LabelRoot } from '@radix-ui/react-label';
 import { Root, Thumb } from '@radix-ui/react-switch';
 import * as React from 'react';
 import classNames from '~/utils/classNames';
@@ -24,18 +23,18 @@ const Switch = (
         <Thumb
           id={id}
           className={
-            'block h-[18px] w-[18px] translate-x-0 rounded-full bg-white transition-transform'
+            "block h-[18px] w-[18px] translate-x-0 rounded-full bg-white transition-transform"
           }
         />
       </Root>
-      {label && (
-        <LabelRoot
-          htmlFor={id}
-          className="ml-2 cursor-pointer align-text-top text-sm font-medium text-neutral-700 ltr:ml-3 rtl:mr-3 dark:text-white"
-        >
-          {label}
-        </LabelRoot>
-      )}
+      {/*{label && (*/}
+      {/*  <LabelRoot*/}
+      {/*    htmlFor={id}*/}
+      {/*    className="ml-2 cursor-pointer align-text-top text-sm font-medium text-neutral-700 ltr:ml-3 rtl:mr-3 dark:text-white"*/}
+      {/*  >*/}
+      {/*    {label}*/}
+      {/*  </LabelRoot>*/}
+      {/*)}*/}
     </div>
   );
 };
