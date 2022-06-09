@@ -3,7 +3,6 @@ import { CoreLayout } from '@divriots/dockit-react/mdx-layout-core/dist/CoreLayo
 import { SunIcon, MoonIcon } from '@heroicons/react/solid';
 import { MDXProvider } from '@mdx-js/react';
 import * as React from 'react';
-import { Switch } from '~/switch';
 
 function switchMode() {
   if (
@@ -23,14 +22,14 @@ const ColorModeSwitch = () => {
   return (
     <div className="self-center flex items-center ml-4 ">
       <SunIcon className="w-4 h-4 mr-1" />
-      <Switch
-        size={18}
-        state={localStorage['tailwindcss-theme'] === 'dark'}
-        onSwitched={(state) => {
-          localStorage['tailwindcss-theme'] = state ? 'dark' : 'light';
-          switchMode();
-        }}
-      />
+      {/*<Switch*/}
+      {/*  size={18}*/}
+      {/*  state={localStorage['tailwindcss-theme'] === 'dark'}*/}
+      {/*  onSwitched={(state) => {*/}
+      {/*    localStorage['tailwindcss-theme'] = state ? 'dark' : 'light';*/}
+      {/*    switchMode();*/}
+      {/*  }}*/}
+      {/*/>*/}
       <MoonIcon className="w-4 h-4 ml-1" />
     </div>
   );
