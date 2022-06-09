@@ -1,0 +1,70 @@
+import { mdx } from '@mdx-js/react';
+import { Props, Description } from '@divriots/dockit-react/props';
+import { Playground } from '@divriots/dockit-react/playground';
+import { DefaultLayout } from '~/mdx-layout';
+export default DefaultLayout;
+import { RadioGroup } from '~/radio-group';
+
+# RadioGroup
+
+<Description of={RadioGroup} />
+
+## Usage
+
+```tsx
+import { RadioGroup } from '@divriots/starter-tailwindcss/radio-group';
+
+<RadioGroup
+  label="Server Size"
+  items={[
+    {
+      name: 'Startup',
+      description: '12GB/6 CPUs &middot; 160 GB SSD disk',
+    },
+    {
+      name: 'Business',
+      description: '16GB/8 CPUs &middot; 512 GB SSD disk',
+    },
+    {
+      name: 'Enterprise',
+      description: '32GB/12 CPUs &middot; 1024 GB SSD disk',
+    },
+  ]}
+  onSelected={(item) => console.log('selected:', item)}
+/>;
+```
+
+## Example
+
+<Playground
+  className="not-prose bg-demo-radiogroup headlessui"
+  scope={{ RadioGroup }}
+  code={`
+<div className="py-16 w-full max-w-md mx-auto">
+  <RadioGroup
+    label="Server Size"
+    items={
+      [
+        {
+          name: 'Startup',
+          description: '12GB/6 CPUs &middot; 160 GB SSD disk',
+        },
+        {
+          name: 'Business',
+          description: '16GB/8 CPUs &middot; 512 GB SSD disk',
+        },
+        {
+          name: 'Enterprise',
+          description: '32GB/12 CPUs &middot; 1024 GB SSD disk',
+        },
+      ]
+    }
+    onSelected={item => console.log('selected:', item)}
+  />
+</div>
+  `}
+/>
+
+## Props
+
+<Props of={RadioGroup} />

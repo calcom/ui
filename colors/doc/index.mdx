@@ -1,0 +1,29 @@
+import { mdx } from '@mdx-js/react';
+import { TailwindShowcases } from '@divriots/dockit-react/tailwind-showcases';
+import { DefaultLayout } from '~/mdx-layout';
+export default DefaultLayout;
+
+import { theme } from '~/theme';
+
+# Background Color
+
+<TailwindShowcases
+  theme={theme}
+  showcaseKey="backgroundColor"
+  componentProps={{
+    className: 'shadow-xl h-28 w-28',
+    checkeredBackground: true,
+  }}
+/>
+
+# Border Color
+
+<TailwindShowcases
+  theme={theme}
+  showcaseKey="borderColor"
+  componentProps={{ className: 'h-28 w-28 bg-grey-50 border-4 rounded' }}
+/>
+
+# Text Color
+
+<TailwindShowcases theme={theme} showcaseKey="textColor" />

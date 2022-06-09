@@ -1,0 +1,22 @@
+import { mdx } from '@mdx-js/react';
+import { TailwindShowcases } from '@divriots/dockit-react/tailwind-showcases';
+import { DefaultLayout } from '~/mdx-layout';
+export default DefaultLayout;
+
+import { theme } from '~/theme';
+
+# Border Radius
+
+<TailwindShowcases
+  theme={theme}
+  showcaseKey="borderRadius"
+  componentProps={{ className: 'shadow-2xl h-32 w-32 bg-blue-400' }}
+/>
+
+# Border Width
+
+<TailwindShowcases
+  theme={theme}
+  showcaseKey="borderWidth"
+  componentProps={{ className: 'h-32 w-32 bg-grey-50' }}
+/>

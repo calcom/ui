@@ -2,17 +2,32 @@
   "packages": {
     "dir": "",
     "menu": [
+      "introduction",
       [
-        "TOKENS",
-        []
+        "tokens",
+        [
+          "typography",
+          "colors",
+          "border",
+          "opacity",
+          "shadows",
+          "spacing",
+          "z-index",
+          "theme"
+        ]
       ],
       [
-        "COMPONENTS",
-        []
-      ],
-      [
-        "INFRASTRUCTURE",
-        []
+        "components",
+        [
+          "menu",
+          "listbox",
+          "switch",
+          "disclosure",
+          "dialog",
+          "popover",
+          "radio-group",
+          "tabs"
+        ]
       ]
     ]
   }

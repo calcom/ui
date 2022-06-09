@@ -8,10 +8,14 @@
     "reactNamespace": "React",
     "module": "ESNext",
     "moduleResolution": "Node",
-    "sourceMap": true,
+    "baseUrl": ".",
     "paths": {
-      "~/*": ["*"],
-      "@divriots/starter-sass/*": ["*"]
+      "~/*": [
+        "*"
+      ],
+      "@divriots/tailwindcss/*": [
+        "*"
+      ]
     }
   }
 }

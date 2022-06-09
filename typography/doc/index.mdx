@@ -1,0 +1,30 @@
+import { mdx } from '@mdx-js/react';
+import { TailwindShowcases } from '@divriots/dockit-react/tailwind-showcases';
+import { DefaultLayout } from '~/mdx-layout';
+export default DefaultLayout;
+
+import { theme } from '~/theme';
+
+# Font Family
+
+<TailwindShowcases theme={theme} showcaseKey="fontFamily" />
+
+# Font Weight
+
+<TailwindShowcases theme={theme} showcaseKey="fontWeight" />
+
+# Font Size
+
+<TailwindShowcases theme={theme} showcaseKey="fontSize" />
+
+# Letter Spacing
+
+<TailwindShowcases theme={theme} showcaseKey="letterSpacing" />
+
+# Line Height
+
+<TailwindShowcases
+  theme={theme}
+  showcaseKey="lineHeight"
+  componentProps={{ useLongText: true }}
+/>

@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.prose pre {
+  @apply font-code !text-sm;
+}
+
+.headlessui {
+  @apply rounded-md;
+}
+
+.headlessui > div:first-child {
+  @apply rounded-t-md border-none;
+}
+
+.headlessui > div:last-child {
+  @apply rounded-b-md border-none;
+  @apply text-sm;
+}
+
+main {
+  @apply dark:bg-gray-900;
+}
+
+main nav,
+.prose :not(:where([class~='not-prose'] *)):not(:where(pre *)) {
+  @apply dark:text-gray-300;
+}
+
+.not-prose {
+  @apply dark:text-gray-900;
+}

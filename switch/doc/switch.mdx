@@ -1,0 +1,34 @@
+import { mdx } from '@mdx-js/react';
+import { Props, Description } from '@divriots/dockit-react/props';
+import { Playground } from '@divriots/dockit-react/playground';
+import { DefaultLayout } from '~/mdx-layout';
+export default DefaultLayout;
+import { Switch } from '~/switch';
+
+# Switch
+
+<Description of={Switch} />
+
+## Usage
+
+```tsx
+import { Switch } from '@calcom/ui/switch';
+
+<Switch onSwitched={(enabled) => console.log('Switched to', enabled)} />;
+```
+
+## Example
+
+<Playground
+  className="not-prose"
+  scope={{ Switch }}
+  code={`
+<div className="py-16 w-max mx-auto">
+  <Switch onSwitched={(enabled) => console.log('Switched to', enabled)} />
+</div>
+  `}
+/>
+
+## Props
+
+<Props of={Switch} />
