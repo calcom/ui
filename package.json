@@ -6,7 +6,7 @@
   "type": "module",
   "homepage": "{{ homepage }}",
   "scripts": {
-    "serve": "npx backlight@latest serve kpVQeWkOhKJKpbrbpH1R --open",
+    "serve": "npx backlight@latest serve bbfY7QWzmmi6Lr8t6P0a --open",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {
